@@ -1,0 +1,11 @@
+<h1>This is a test</h1>
+
+<form action="{% url "suc" %}" method="POST">
+
+{% csrf_token %}
+<ul>
+ {{form.as_p}}
+</ul>
+
+<input type="submit" value="Save"/>
+</form>
